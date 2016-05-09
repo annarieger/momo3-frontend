@@ -26,17 +26,17 @@ Ext.define("momo.view.panel.MapContainer",{
             cls: 'basigx-overview-map',
             hidden: true,
             layers: [
-                     new ol.layer.Tile({
-                         source: new ol.source.TileWMS({
-                             url: 'http://ows.terrestris.de/osm/service?',
-                             params: {
-                                 LAYERS: 'OSM-WMS',
-                                 TRANSPARENT: false,
-                                 VERSION: '1.1.1'
-                             }
-                         })
-                     })
-                     ]
+                new ol.layer.Tile({
+                    source: new ol.source.TileWMS({
+                        url: 'http://ows.terrestris.de/osm/service?',
+                        params: {
+                            LAYERS: 'OSM-WMS',
+                            TRANSPARENT: false,
+                            VERSION: '1.1.1'
+                        }
+                    })
+                })
+            ]
         },
         // we don't need menu container (yet)
         menuConfig: null,

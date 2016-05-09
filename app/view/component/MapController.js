@@ -251,7 +251,8 @@ Ext.define('momo.view.component.MapController', {
 
     setRouting: function(){
         var mapComponentXType = 'momo-component-map';
-        var viewModel = this.getView().up().down(mapComponentXType).getViewModel();
+        var viewModel =
+            this.getView().up().down(mapComponentXType).getViewModel();
         var hash = BasiGX.util.Application.getRoute(mapComponentXType);
 
         // If the map moved without hitting a navigationhistorybutton,
